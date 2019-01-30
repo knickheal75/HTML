@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <script>
+    
+    navigator.getBattery().then(function(battery) {
+        console.log(battery.level);
+        var battery_level=parseInt(battery.level*100);
+            console.log(parseInt(battery.level));
+            document.getElementById("batt").innerHTML=battery_level;
+       // ... and any subsequent updates.
+       battery.onlevelchange = function() {
+    console.log(this.level);
+      };
+    });
+        
+        </script>
+    <body>
+       
+        <center>
+          The battery level is <br> 
+            <p id="batt"></p>
+        </center>
+        
+    </body>
+</html>
