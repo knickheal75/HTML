@@ -1,0 +1,25 @@
+<html>
+	<head>
+	<script>
+		// var dim = getElementByTag("div");
+		var w = 200;
+		var h = 100;
+		var varyDim = setInterval(function(){
+		  if (h>600) { cancelInterval(varyDim) };
+		  w = 5 + w;
+		  h = 5 + w;
+
+		  document.getElementById('box').style.width = w + 'px';
+		  document.getElementById('box').style.height = h + 'px';
+		  
+		}, 500);
+	</script>	
+	</head>
+
+	<body>
+	<div style="width:200px; height:100px; background:gray" id="box" onclick="varyDim()"></div>	
+	</body>
+	
+</html>
+
+
