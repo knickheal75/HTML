@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Battery Level API</title>
+</head>
+<body style="background-color:pink">
+
+    <div style="background-color: white; width: 100px">
+
+            <div id="battery" style="background-color: black; height: 15px;"></div>
+
+    </div> 
+ <script>
+     var output=document.getElementById("battery")
+     navigator.getBattery().then(function(battery) {
+       
+        function updateLevelInfo(){
+    output.style.width=battery.level*100+"px";
+  }      updateLevelInfo()
+
+     })
+     
+
+</script>
+
+</body>
+
+</html>
