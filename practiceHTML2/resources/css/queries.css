@@ -1,0 +1,50 @@
+@media only screen and (max-width: 1200px) {
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+  .row {
+    padding: 0 2%;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
+  section {
+    padding: 60px 0;
+  }
+  .long-copy {
+    width: 80px;
+    margin-left: 10%;
+  }
+  .steps-box {
+    margin-top: 10px;
+  }
+  .steps-box:last-child {
+    margin-top: 10px;
+  }
+  .work-step {
+    margin-bottom: 40px;
+  }
+  .work-step:last-of-type {
+    margin-bottom: 60px;
+  }
+  .app-screen {
+    width: 50%;
+  }
+  .icon-small {
+    widows: 20px;
+  }
+  .city-feature {
+    font-size: 90%;
+  }
+}
+/* phones to tablets from 481px to 767px*/
+@media only screen and (max-width: 767px) {
+}
+
+/* small phones till 480px*/
+@media only screen and (max-width: 480px) {
+}
