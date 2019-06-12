@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1140px;
+  margin: 20px auto 0 auto;
+}
+body {
+  font-family: Ubuntu;
+  font-size: 18px;
+}
+
+h1,
+h2 {
+  color: #2ccc3a;
+  font-family: Ubuntu, Helvetica;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.maintext {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.authortext {
+  font-size: 22px;
+  float: left;
+  margin: 35px 0 0 10px;
+}
+
+.blog-post {
+  width: 75%;
+  float: left;
+  padding-right: 30px;
+  position: relative;
+}
+
+.other-posts {
+  width: 25%;
+  float: left;
+}
+
+.author-box {
+  border-top: 1px solid #333;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.other {
+  margin-bottom: 40px;
+}
+.author-box img {
+  width: auto;
+  height: 100px;
+  border-radius: 50%;
+  float: left;
+}
+
+.blog-post img {
+  height: 150px;
+  width: auto;
+}
+.date {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
